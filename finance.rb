@@ -42,3 +42,12 @@ expance_items.length
 variable_expance_items = Hash.new(0)
 variable_expance_items = {birthdays: 0, vacacion: 0, clothes: 0} 
 
+# можно еще так записать:
+const_money = {
+  "food" => 3500,
+  "flat" => 30000,
+  "LPG" => 2500
+}
+var_spendings = Hash.new
+var_spendings["drugs_grocery"] = 200
+var_spendings ["clothes"] = 500

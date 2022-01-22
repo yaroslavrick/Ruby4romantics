@@ -60,3 +60,9 @@ end
 1.upto(10) { |i| print "#{i} " }
 # => 1 2 3 4 6 7 8 9 10
 
+########### for
+puts "For loop: "
+for i in 1..5
+  next if i % 2 == 0
+  puts i
+end
