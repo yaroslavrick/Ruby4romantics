@@ -48,6 +48,15 @@ for i in 1..10
 end
 # => 1 2 3 4 6 7 8 9 10
 
+# for 
+for i in (1..3) # analog 3.times do
+  puts "I'm a refactoring master!"
+end
+
+# .times do |
+
+3.times {puts "I'm a refactoring master!"}
+
 # Each
 [1,2,3,4,5,6,7,8,9,10].each { |value| print "#{value} " }
 # => 1 2 3 4 6 7 8 9 10

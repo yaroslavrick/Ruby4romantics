@@ -51,3 +51,33 @@ when 5..Float::INFINITY
 else
   "#{a} less than 0"
 end
+
+# ternary conditional expression
+###########
+# The syntax looks like this:
+# action if boolean                   - PERFECT!!!!
+# boolean ? Do this if true: Do this if false ##########################
+###########
+fuel = false
+
+puts fuel ? "Go" : "Empty"
+#empty
+
+
+puts 1 < 2? "One is less than two!" : "One is not less than two."
+# One is less than two!
+
+# puts the even (one row if)
+
+my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+my_array.each {|num| puts num if num%2==0} 
+
+# 2
+# 4
+# 6
+# 8
+# 10
+
+# Up the Down Staircase
+"L".upto("P") {|letter| puts letter}
