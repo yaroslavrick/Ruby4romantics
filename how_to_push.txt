@@ -1,0 +1,28 @@
+# How to push:
+git add .
+git commit -m 'some progress'
+git push origin development
+
+
+
+
+###
+# How to create new repo:
+#
+
+cd Projects/Ruby/RubyKoans/koans 
+git init
+# next like in instructions on github:
+# git branch -M main   - I don't know to do that or not??
+git remote add origin https://github.com/yaroslavrick/ruby_koans.git # for example
+git push -u origin main
+git remote -v
+git push -u origin main
+git checkout -b development  #Переключено на новую ветку «development»
+
+
+# To test:
+rake
+# or:
+ruby about_arrays.rb #for example
+
