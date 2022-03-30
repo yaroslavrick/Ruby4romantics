@@ -11,6 +11,20 @@ end
 
 user("Yarik", 33)
 
+#
+var1 = 45
+var2 = 40
+
+if var1 > var2
+    puts "#{var1} is bigger"
+    elsif var2 > var1
+        puts "#{var2} is bigger"
+    else
+        puts "#{var1} & #{var2} are equal"
+end
+#
+
+
 # varian 2 (more shorter)
 def user(name, age)
     return puts "#{name}, you're wellcome" if age>18

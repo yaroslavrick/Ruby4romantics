@@ -3,10 +3,6 @@ git add .
 git commit -m 'some progress'
 git push origin development
 
-
-
-
-###
 # How to create new repo:
 #
 
