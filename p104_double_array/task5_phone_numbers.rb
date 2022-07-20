@@ -7,20 +7,25 @@ puts "Задание: к вам обратился предпринимател�
 Когда наши клиенты набирают буквенный номер на клавиатуре телефона (см.картинку
 ниже), он транслируется в цифровой. Напишите программу, которая будет переводить
 (транслировать) слово без дефисов в телефонный номер."
-puts
 
 def phone_to_number(phone)
   alphabet = [[], [], %w[A B C], %w[D E F], %w[G H I], %w[J K L], %w[M N O], %w[P Q R S], %w[T U V], %w[W X Y Z]]
-  numbers = ''
+  #   phone.each_char do |char|
+  #     char == "M"
+  #     ascii = char.ord
+  #     # If numbers (48-57)
+  #     if ascii > 47 && ascii < 58
+  #       print  char
+  #     #   If letters
+  #     else
+  #       print alphabet.index(alphabet.detect { |row| row.include?(char) })
+  #     end
+  #   end
   phone.each_char do |char|
-    # char == "M"
-    ascii = char.ord
-    # If numbers (48-57)
-    if ascii > 47 && ascii < 58
-      print  char
-    #   If letters
-    else
+    if alphabet.detect { |row| row.include?(char) }
       print alphabet.index(alphabet.detect { |row| row.include?(char) })
+    else
+      print char
     end
   end
   print
